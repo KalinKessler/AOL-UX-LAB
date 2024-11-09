@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#f8f8f8"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/itemImage1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/image1"
+                android:contentDescription="Item Image1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:id="@+id/itemTitleLabel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Pensil Arang"
+                    android:textColor="#7B4D12"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/itemPriceLabel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Price: Rp.5000"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/itemDescriptionLabel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Pensil yang terbuat dari arang yang ramah lingkungan."
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#f8f8f8"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/itemImage2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/image2"
+                android:contentDescription="Item Image" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:id="@+id/itemTitleLabel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Pengggaris Besi"
+                    android:textColor="#7B4D12"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/itemPriceLabel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Price: Rp.10000"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/itemDescriptionLabel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Penggaris Besi, senjata favorit ibu-ibu."
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#f8f8f8"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/itemImage3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/image3"
+                android:contentDescription="Item Image" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:id="@+id/itemTitleLabel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Pulpen Hitam"
+                    android:textColor="#7B4D12"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/itemPriceLabel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Price: Rp.4000"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/itemDescriptionLabel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Pulpen hitam untuk menulis surat wasiat."
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#f8f8f8"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/itemImage4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/image4"
+                android:contentDescription="Item Image" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:id="@+id/itemTitleLabel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Stabilo"
+                    android:textColor="#7B4D12"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/itemPriceLabel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Price: Rp.7000"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/itemDescriptionLabel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Stabilo berbagai warna, untuk memperjelas penjelasan."
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#f8f8f8"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/itemImage5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/image5"
+                android:contentDescription="Item Image" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:id="@+id/itemTitleLabel5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Diary Merah"
+                    android:textColor="#7B4D12"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/itemPriceLabel5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Price: Rp.15000"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/itemDescriptionLabel5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Legenda mengatakan diary ini pernah dijadikan Death Note."
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#f8f8f8"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/itemImage6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/image6"
+                android:contentDescription="Item Image" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:id="@+id/itemTitleLabel6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Staples"
+                    android:textColor="#7B4D12"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/itemPriceLabel6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Price: Rp.17000"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/itemDescriptionLabel6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Staples untuk menyatukan kertas."
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#f8f8f8"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/itemImage7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/image7"
+                android:contentDescription="Item Image" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:id="@+id/itemTitleLabel7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Tepak Barbie"
+                    android:textColor="#7B4D12"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/itemPriceLabel7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Price: Rp.13000"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/itemDescriptionLabel7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Tempat menaruh segala macam alat tulis, bermotif barbie kesukaan putri anda."
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>

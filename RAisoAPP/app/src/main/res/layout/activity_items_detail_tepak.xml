@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:alpha="0.5"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp"
+            android:onClick="navigateToItemsPage">
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/back"
+                android:contentDescription="Back to Items" />
+
+            <TextView
+                android:id="@+id/backLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Items"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Tepak Barbie"
+            android:textColor="#F59A23"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image7"
+            android:contentDescription="Item Image"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Rp. 13000"
+            android:textColor="#333333"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/itemStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Tersedia, 100 stock lagi"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/quantityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:text="Jumlah Pembelian:"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/quantityTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mau beli berapa?"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/buyErrorMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:text="Error message here"
+            android:textColor="#D9001B"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:paddingTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/buyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F59A23"
+            android:padding="16dp"
+            android:text="BELI"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans_bold"
+            android:onClick="buyItem" />
+
+        <TextView
+            android:id="@+id/productDescriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Deskripsi Produk:"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:src="@drawable/orange_dots"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="6dp"
+                    android:contentDescription="Dot" />
+
+                <TextView
+                    android:id="@+id/desc1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Desain Barbie yang lucu dan menarik.
+."
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:src="@drawable/orange_dots"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="6dp"
+                    android:contentDescription="Dot" />
+
+                <TextView
+                    android:id="@+id/desc2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Kapasitas besar untuk menyimpan berbagai alat tulis."
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:src="@drawable/orange_dots"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="6dp"
+                    android:contentDescription="Dot" />
+
+                <TextView
+                    android:id="@+id/desc3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Terbuat dari bahan yang tahan lama dan mudah dibersihkan.
+"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:src="@drawable/orange_dots"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="6dp"
+                    android:contentDescription="Dot" />
+
+                <TextView
+                    android:id="@+id/desc4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Cocok untuk anak-anak dan remaja yang menyukai Barbie."
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
